@@ -32,9 +32,9 @@ public class SummaryForm {
             int dualvaccCount = new database().getDualVaccinatedCount();
             int boostervaccCount = new database().getBoosterVaccinatedCount();
             noneLabel.setText(String.valueOf(nonevaccCount));
-            singalLabel.setText(String.valueOf(nonevaccCount));
-            duelLabel.setText(String.valueOf(nonevaccCount));
-            boosterLable.setText(String.valueOf(nonevaccCount));
+            singalLabel.setText(String.valueOf(singalvaccCount));
+            duelLabel.setText(String.valueOf(dualvaccCount));
+            boosterLable.setText(String.valueOf(boostervaccCount));
         } catch (ClassNotFoundException | SQLException ex) {
             ex.printStackTrace();
         }
